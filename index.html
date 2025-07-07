@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Hero Section</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Professional Navbar -->
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100"
+    >
+      <div class="container mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center">
+            <span class="text-2xl font-bold text-blue-500"> ChronoWatch </span>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex items-center space-x-8">
+            <a
+              href="#"
+              class="nav-link text-gray-600 hover:text-blue-600 font-medium py-2"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              class="nav-link text-gray-600 hover:text-blue-600 font-medium py-2"
+            >
+              Collections
+            </a>
+            <a
+              href="#"
+              class="nav-link text-gray-600 hover:text-blue-600 font-medium py-2"
+            >
+              Features
+            </a>
+            <a
+              href="#"
+              class="nav-link text-gray-600 hover:text-blue-600 font-medium py-2"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              class="nav-link text-gray-600 hover:text-blue-600 font-medium py-2"
+            >
+              Contact
+            </a>
+          </nav>
+
+          <!-- CTA and Mobile Menu Button -->
+          <div class="flex items-center space-x-4">
+            <button
+              class="hidden md:block px-5 py-2 text-sm font-medium text-blue-600 hover:bg-blue-200 rounded-full transition-all"
+            >
+              SIGN IN
+            </button>
+            <button
+              class="md:hidden flex flex-col justify-center items-center group"
+            >
+              <span
+                class="block w-6 h-0.5 bg-gray-600 mb-1.5 transition-all group-hover:bg-blue-600"
+              ></span>
+              <span
+                class="block w-6 h-0.5 bg-gray-600 mb-1.5 transition-all group-hover:bg-blue-600"
+              ></span>
+              <span
+                class="block w-6 h-0.5 bg-gray-600 transition-all group-hover:bg-blue-600"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Hero Section -->
+    <section class="relative overflow-hidden">
+      <div class="container mx-auto px-6 py-20 md:py-20">
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Content -->
+          <div
+            class="md:w-1/2 lg:w-2/5 flex flex-col items-start space-y-8 relative z-10"
+          >
+            <span
+              class="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-600 rounded-full"
+            >
+              New Collection 2023
+            </span>
+
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
+            >
+              Precision Crafted <br />
+              <span class="gradient-text">Timepieces</span> for <br />
+              the Modern Era
+            </h1>
+
+            <p class="text-lg text-gray-600 max-w-lg">
+              Experience the perfect blend of innovative technology and timeless
+              design. Our watches are engineered for those who value both form
+              and function.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 w-full">
+              <button
+                class="px-8 py-3.5 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-medium rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30"
+              >
+                Explore Collection
+                <span class="ml-2">→</span>
+              </button>
+              <button
+                class="px-8 py-3.5 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-all flex items-center"
+              >
+                Learn More
+                <span class="ml-2">↓</span>
+              </button>
+            </div>
+
+            <div class="flex items-center space-x-6 pt-4">
+              <div class="flex items-center">
+                <div class="flex -space-x-2">
+                  <img
+                    class="w-8 h-8 rounded-full border-2 border-white"
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Customer"
+                  />
+                  <img
+                    class="w-8 h-8 rounded-full border-2 border-white"
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Customer"
+                  />
+                  <img
+                    class="w-8 h-8 rounded-full border-2 border-white"
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Customer"
+                  />
+                </div>
+                <span class="ml-3 text-sm text-gray-500">
+                  Join 5,000+ satisfied customers
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="md:w-1/2 lg:w-3/5 relative mt-16 md:mt-0">
+            <div class="relative max-w-xl mx-auto float-animate">
+              <img
+                src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80"
+                alt="Luxury Watch"
+                class="rounded-xl watch-shadow w-full object-cover"
+                style="height: 500px"
+              />
+              <div
+                class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-lg border border-blue-500 transition-all hover:scale-105"
+              >
+                <div class="text-sm text-gray-500">Starting at</div>
+                <div class="text-2xl font-bold text-gray-900">$299</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative Elements -->
+      <div
+        class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-r from-transparent to-blue-50 -z-0"
+      ></div>
+
+      <!-- Pattern -->
+      <div
+        class="absolute bottom-0 left-0 w-full h-32 bg-[url('https://tailwindui.com/img/components/abstract-patterns/overlay-3.svg')] bg-[length:1200px] bg-repeat opacity-10 -z-10"
+      ></div>
+    </section>
+  </body>
+</html>
